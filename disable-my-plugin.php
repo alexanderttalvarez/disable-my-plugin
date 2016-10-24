@@ -311,6 +311,4 @@ class DisableMyPlugin {
 
 }
 
-require_once('disable-my-plugin/add-new-plugin.php');
-
 $disable_my_plugin = new DisableMyPlugin();
