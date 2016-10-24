@@ -1,0 +1,78 @@
+.dmp-add-plugin {
+  display: inline-block;
+  background-color: #5cb85c;
+  padding: 8px 20px;
+  color: white;
+  border-bottom: 3px solid #4cae4c;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dmp-add-plugin:hover {
+  color: white;
+  background-color: #398439;
+}
+
+.dmp-table {
+  margin-bottom: 20px;
+}
+
+.dmp-table td, .dmp-table th {
+  padding: 5px 10px;
+}
+
+.dmp-table > thead > tr {
+  background-color: #333;
+  color: white;
+}
+
+.dmp-table > tbody > tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.dmp-table > tbody > tr:nth-child(even) {
+  background-color: #bdbdbd;
+}
+
+.dmp-table input[type=time] {
+  max-width: 100px;
+}
+
+.current-pos {
+  display: none;
+}
+
+.delete-button {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #499dce;
+  padding-top: 5px;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #71bbe6;
+  text-decoration: none;
+  color: white;
+}
+
+.time_zone {
+  visibility: hidden;
+}
+
+.dmp-errors {
+  display: none;
+  color: #a94442;
+  padding: 15px;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+  width: 95%;
+  margin-bottom: 20px;
+}
