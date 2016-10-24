@@ -314,13 +314,3 @@ class DisableMyPlugin {
 require_once('disable-my-plugin/add-new-plugin.php');
 
 $disable_my_plugin = new DisableMyPlugin();
-
-/*
-* Retrieve this value with:
-* $disable_my_plugin_options = get_option( 'disable_my_plugin_option_name' ); // Array of All Options
-* $plugin_select = $disable_my_plugin_options['plugin_select']; // Plugin
-* $hour_location = $disable_my_plugin_options['hour_location']; // Hour Location
-* $start_hour = $disable_my_plugin_options['start_hour']; // Start Hour
-* $end_hour = $disable_my_plugin_options['end_hour']; // End Hour
-* $time_zone = $disable_my_plugin_options['time_zone']; // Time Zone
-*/
