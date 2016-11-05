@@ -84,7 +84,8 @@ class DisableMyPlugin {
       }
 
       // Comparing the hours. We use strtotime to transform it into a date type variable
-      if( (strtotime($hour) >= strtotime($plugin['start_hour'])) && (strtotime($hour) < strtotime($plugin['end_hour'])) ) {
+      if( ((strtotime($hour) >= strtotime($plugin['start_hour'])) && (strtotime($hour) < strtotime($plugin['end_hour']))) ||
+          ((strtotime($hour) <= strtotime($plugin['start_hour'])) && (strtotime($hour) < strtotime($plugin['end_hour'])) && (strtotime($plugin['start_hour']) > strtotime($plugin['end_hour']))) ) {
 
         // Deleting the plugin from the array of active plugins
         $key = array_search( $plugin['plugin_select'], $plugins );
@@ -105,6 +106,7 @@ class DisableMyPlugin {
  		<div class="wrap">
  			<h2>Disable my Plugin</h2>
       <div class="dmp-current-folder" style="display:none"><?php echo WPMU_PLUGIN_URL."/disable-my-plugin/"; ?></div>
+      <div class="dmp-current-time"><strong>Current server time:</strong> <?php echo date("H:i"); ?></div>
  			<p><?php _e('Choose the plugins you want to disable during certain hours.'); ?></p>
  			<?php settings_errors(); ?>
  			<form method="post" action="options.php" id="dmp-form">
